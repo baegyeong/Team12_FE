@@ -5,7 +5,7 @@ FROM krmp-d2hub-idock.9rum.cc/goorm/node:16
 WORKDIR /usr/src/app
 
 # 필요한 React App 소스 코드를 이미지에 복사
-COPY krampoline/ ./
+COPY . ./
 
 # 필요한 npm 패키지 설치
 RUN npm ci
