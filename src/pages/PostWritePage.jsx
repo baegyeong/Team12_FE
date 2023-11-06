@@ -46,6 +46,9 @@ const PostWritePage = () => {
 
     // react-query
     mutate(data, {
+      onSuccess: () => {
+        navigate('/post');
+      },
       onError: (error) => {
         console.error(error);
       },
